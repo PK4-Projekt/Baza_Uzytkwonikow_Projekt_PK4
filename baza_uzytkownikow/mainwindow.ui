@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>896</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="loginTab">
+       <attribute name="title">
+        <string>Logowanie</string>
+       </attribute>
+       <widget class="QLabel" name="logowanieLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>38</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Login</string>
+        </property>
+        <property name="buddy">
+         <cstring>loginLineEdit</cstring>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="loginLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>55</x>
+          <y>10</y>
+          <width>200</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="hasOLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>39</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hasło</string>
+        </property>
+        <property name="buddy">
+         <cstring>passwordLineEdit</cstring>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="passwordLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>55</x>
+          <y>49</y>
+          <width>200</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="loginButton">
+        <property name="geometry">
+         <rect>
+          <x>55</x>
+          <y>82</y>
+          <width>201</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Zaloguj</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="registrationTab">
+       <attribute name="title">
+        <string>Rejestracja</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="leftMargin">
+           <number>20</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>20</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>5</number>
+          </property>
+          <item row="6" column="0">
+           <widget class="QLabel" name="numeryTelefonuLabel">
+            <property name="text">
+             <string>Numery Telefonu</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>phoneLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QLineEdit" name="postalCodeLineEdit"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="passwordRepeatLabel">
+            <property name="text">
+             <string>Powtórz hasło</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>passwordRepeatLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QFrame" name="frame">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="0" colspan="2">
+              <widget class="QListWidget" name="phoneListView"/>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="addPhoneButton">
+               <property name="text">
+                <string>Dodaj telefon</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLineEdit" name="phoneLineEdit"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="passwordLineEdit_2"/>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="postalCodeLabel">
+            <property name="text">
+             <string>Kod pocztowy</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>postalCodeLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="surnameLineEdit"/>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="passwordRepeatLineEdit"/>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="emailsLabel">
+            <property name="text">
+             <string>Adresy phone</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>emailLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="hasOLabel_2">
+            <property name="text">
+             <string>Hasło</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>passwordLineEdit_2</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="logowanieLineEdit_2"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="nameLabel">
+            <property name="text">
+             <string>Imię</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>nameLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="cityLabel">
+            <property name="text">
+             <string>Miejscowosc</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>cityLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QLineEdit" name="homeNumberLineEdit"/>
+          </item>
+          <item row="4" column="3">
+           <widget class="QLineEdit" name="postOfficeLineEdit"/>
+          </item>
+          <item row="6" column="2">
+           <widget class="QWidget" name="emailsWidget" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>100</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5"/>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="nameLineEdit"/>
+          </item>
+          <item row="7" column="1">
+           <widget class="QFrame" name="frame_2">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="1" column="1">
+              <widget class="QPushButton" name="addEmailButton">
+               <property name="text">
+                <string>  Dodaj phone  </string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLineEdit" name="emailLineEdit"/>
+             </item>
+             <item row="0" column="0" colspan="2">
+              <widget class="QListView" name="emailListView"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="streetLineEdit"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="surnameLabel">
+            <property name="text">
+             <string>Nazwisko</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>surnameLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="streetLabel">
+            <property name="text">
+             <string>Ulica</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>streetLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="homeNumberLabel">
+            <property name="text">
+             <string>Numer domu</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>homeNumberLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="postOfficeLabel">
+            <property name="text">
+             <string>Urząd pocztowy</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>postOfficeLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="cityLineEdit"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="logowanieLabel_2">
+            <property name="text">
+             <string>Login</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buddy">
+             <cstring>logowanieLineEdit_2</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0" colspan="4">
+           <widget class="QPushButton" name="registerBtn">
+            <property name="text">
+             <string>Rejestruj</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>loginLineEdit</tabstop>
+  <tabstop>passwordLineEdit</tabstop>
+  <tabstop>loginButton</tabstop>
+  <tabstop>logowanieLineEdit_2</tabstop>
+  <tabstop>passwordLineEdit_2</tabstop>
+  <tabstop>passwordRepeatLineEdit</tabstop>
+  <tabstop>nameLineEdit</tabstop>
+  <tabstop>surnameLineEdit</tabstop>
+  <tabstop>phoneLineEdit</tabstop>
+  <tabstop>addPhoneButton</tabstop>
+  <tabstop>phoneListView</tabstop>
+  <tabstop>emailLineEdit</tabstop>
+  <tabstop>addEmailButton</tabstop>
+  <tabstop>emailListView</tabstop>
+  <tabstop>cityLineEdit</tabstop>
+  <tabstop>streetLineEdit</tabstop>
+  <tabstop>homeNumberLineEdit</tabstop>
+  <tabstop>postalCodeLineEdit</tabstop>
+  <tabstop>postOfficeLineEdit</tabstop>
+  <tabstop>registerBtn</tabstop>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
